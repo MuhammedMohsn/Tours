@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import { Fragment ,useState,useEffect} from 'react';
 import Tours from './Tours'
@@ -9,12 +8,8 @@ function App() {
   async function getdata(){
       let response=await fetch(url)
       let data=await response.json()
-      console.log(`the data is ${data}`)
       setloading(false)
-
       setTours(data)
-      console.log(tours)
-      // console.log(`the data is : ${JSON.parse(JSON.stringify(data))}`)
   }
   const removetour=(id)=>{
       let newtours=tours.filter(tour=>{return tour.id!==id})

@@ -68,6 +68,7 @@ img{
 display:flex;
 align-items: center;
 justify-content: space-between;
+color: white;
 }
 .tour_price{
   color:rgb(0, 81, 255);
@@ -90,11 +91,11 @@ justify-content: space-between;
 .delete_btn{
   width: 40%;
   border:2px solid red;
-  
   color:red;
   height:40px;
   cursor: pointer;
   font-size: larger;
-  
-  /* margin-left: 170px; */
+}
+footer p{
+  color: white;
 }
